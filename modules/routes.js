@@ -39,7 +39,6 @@ function ModuleRoutes(app) {
       return m;
     });
 
-    // Send back the module so the react app can update it
     res.send(module);
     res.sendStatus(204);
   });

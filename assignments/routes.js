@@ -40,7 +40,6 @@ function AssignmentRoutes(app) {
       return a;
     });
 
-    // Send back the assignment so the React app can update it
     res.send(assignment);
     res.sendStatus(204);
   });

@@ -1,4 +1,5 @@
 import Database from "../database/index.js";
+
 function CourseRoutes(app) {
   app.post("/api/courses", (req, res) => {
     const course = { ...req.body, _id: new Date().getTime().toString()};
@@ -34,7 +35,6 @@ function CourseRoutes(app) {
       return c;
     });
 
-    // Send back the course so the react app can update it
     res.send(course);
     res.sendStatus(204);
   });

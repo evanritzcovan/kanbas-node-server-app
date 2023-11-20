@@ -48,7 +48,6 @@ const Lab5 = (app) => {
     }
 
     todos.splice(todos.indexOf(todo), 1);
-    // res.json(todos);
     res.sendStatus(204);
   });
 
